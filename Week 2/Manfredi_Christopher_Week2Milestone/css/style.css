@@ -241,6 +241,7 @@ label {
     background-color: #CCC;
     padding: 10px;
     margin-left: 315px;
+    margin-top: 30px;
 }
 
 .tabs li {
@@ -263,6 +264,10 @@ label {
 
 #profile {
     float: right;   
+}
+
+label[for="security"] {
+ color: black;   
 }
 
 
