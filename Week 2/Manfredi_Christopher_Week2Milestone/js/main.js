@@ -68,6 +68,28 @@ $(document).ready(function(){
     });
 });
         
+    
+    /*
+	===============================================
+	======================================== Tool Tip	
+	*/
+    
+    $('.mastertooltip').hover(function(){
+        var title = $(this).attr('title');
+        $(this).data('tiptext', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+    }, function() {
+        $(this).attr('title', $(this).data('tiptext'));
+        $('.tooltip').remove();
+    }).mousemove(function(e) {
+        var mousex = e.pageX + 20;
+        var mousey = e.pageY + 10;
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+    });
         
     
     
