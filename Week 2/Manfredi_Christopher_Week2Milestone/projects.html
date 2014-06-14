@@ -27,12 +27,13 @@
 	<!-- end CSS-->
     
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 	
 </head>
 
 <body>
     
-    <h1> My Dashboard </h1>
+    <h1> My Projects </h1>
     
     <div id="topbar"></div>
     
@@ -49,38 +50,82 @@
     <div id="welcome">
         <p> Welcome Chris,</p>
         </div>
+            <input type="button" value="Logout" id="logout">
+
+    
+    <div class="addproject">
+    <p><a href="#" class="modalClick">Add Project</a>
+    </p>
+    </div>
     
     
-<div class="mytabs">
-    <ul class='tabs'>
-        <li><a href='#tab1'>Profile</a></li>
-        <li><a href='#tab2'>Edit Profile</a></li>
-        <li><a href='#tab3'>Account Security</a></li>
-    </ul>
-    
-    <div id='tab1'>
-        <img src="images/picture.png" alt="ProfilePicture" width="280px" height="210px" class="profilepic">
-        <h4> Chris Manfredi </h4>
-        <p id="profile"> Hello my name is Chris</p>
-        </div>
-    <div id='tab2'>
-        <h2> Edit Profile</h2>
-        <textarea rows="7" cols="50"></textarea>
-        <button class="save">Save</button>
-        </div>
-    <div id='tab3'>
-        <label for="security">Display Birthday On Profile</label><br>
-        <input type="radio" name="sex" value="male"> Yes <br>
-        <input type="radio" name="sex" value="female"> No <br>
-        
+    <div id ="overlay">
+        <div id="modal">
+    <h3 class="header">Add Project</h3>
+        <span class="close">X</span>
+    <div id="add">
+        <form id="addform">
+        <label> Project Name: </label>
+            <input name="projectname" type="text" id="projectname">
+        <br>
+        <label> Project Description: </label>
+            <input name="projectdescription" type="text" id="projectdescription">
+        <br>
+        <label> Project Due Date: </label>
+            <input name="projectduedate" type="text" id="projectduedate">
+        <br>
+        <label for="status"> Select Status: </label>
         <br>
         
-        <label for="security">Login To Account Automatically</label><br>
-        <input type="radio" name="sex" value="male"> Yes <br>
-        <input type="radio" name="sex" value="female"> No <br>
-        <button class="save">Save</button>
+        
+        <label class="mystatus">
+        <input type="radio" name="status" id="urgent"> <img
+        src="images/placeholder.jpg" width="69" height="75">
+        </label>
+        
+        <label class="mystatus">
+        <input type="radio" name="status" id="normal"> <img
+        src="images/placeholder.jpg" width="69" height="75">
+        </label>
+                 
+        <label class="mystatus">
+        <input type="radio" name="status" id="delayed"> <img
+        src="images/placeholder.jpg" width="69" height="75">
+        </label>
+                 
+        <label class="mystatus">
+        <input type="radio" name="status" id="complete"> <img
+        src="images/placeholder.jpg" width="69" height="75">
+        </label>
+            
+        <input type="button" value="Add Project!" id="addprojectbtn">
+
+        
+        </form>
+                 
+                   
+        
+        
+        </div>
+        </div>    
     </div>
-</div>           
+
+    
+    
+<dl class="projectsaccordion">
+
+<dt><a href="">Project 1</a></dt>
+<dd> This Is Your First Project </dd>
+
+<dt><a href="">Project 2</a></dt>
+<dd> This Is Your Second Project </dd>
+
+<dt><a href="">Project 3</a></dt>
+<dd> This Is Your </dd>
+
+</dl>
+    
+
                     
 <div id="footer">
 

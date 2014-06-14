@@ -1,6 +1,6 @@
 /*  
-	Your Project Title
-	Author: You
+	Infinite Technology
+	Author: Chris Manfredi
 */
 
 
@@ -92,6 +92,45 @@ $(document).ready(function(){
     });
         
     
+    
+      /*
+	===============================================
+	======================================== Projects Accordion	
+	*/
+    
+    (function($) {
+    
+  var allPanels = $('.projectsaccordion > dd').hide();
+    
+  $('.projectsaccordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
+
+})(jQuery);
+    
+    
+     /*
+	===============================================
+	======================================== Add Modal	
+	*/
+    
+   $('.modalClick').on('click', function(event) {
+       event.preventDefault();
+       $('#overlay')
+            .fadeIn()
+            .find('#modal')
+            .fadeIn()
+   });
+    
+    $('.close').on('click', function(event) {
+        event.preventDefault();
+        $('#overlay')
+        .fadeOut()
+        .find('#modal')
+        .fadeOut();
+    });
     
     
 	

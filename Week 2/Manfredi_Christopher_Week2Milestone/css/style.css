@@ -20,19 +20,36 @@ h1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+h2 {
+    color: white;
+    font-family: sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
+}
+
 h3 {
-    text-align: center;   
+    text-align: center; 
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 h4 {
     float: right; 
     margin: 0 150px 30px 0;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 22px;
+}
+
+p {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
 }
 
 #welcome {
     position: absolute;
     left: 1150px;
-    top: 0;
+    top: 7px;
     color: white;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 23px;
@@ -69,6 +86,33 @@ textarea {
 #signup {
     width: 125px; 
     height: 60px;
+}
+
+#logout {
+    border-radius: 5px;
+    border: 0;
+    width: 55px;
+    height:25px;
+    font-family: sans-serif;
+    font-size: 10px;
+    background-color: grey;
+    color: white;
+    padding-bottom: 1px;
+    position: absolute;
+    left: 1075px;
+    top: 25px;
+}
+
+#addprojectbtn {
+    border-radius: 5px;
+    border: 0;
+    width: 70px;
+    height: 27px;
+    font-family: sans-serif;
+    font-size: 10px;
+    background-color: grey;
+    color: white;
+    margin: 3px 0 0 137px;
 }
 
 #go {
@@ -242,10 +286,12 @@ label {
 
 .mytabs {
     width: 760px;
-    background-color: #CCC;
+    background-color: #363636;
     padding: 10px;
     margin-left: 315px;
     margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid white;
 }
 
 .tabs li {
@@ -267,7 +313,8 @@ label {
 }
 
 #profile {
-    float: right;   
+    float: right; 
+    color: white;
 }
 
 label[for="security"] {
@@ -300,6 +347,96 @@ label[for="signup"] {
     font-size: 12px Arial;
 }
 
+.projectsaccordion {
+    width: 65%;
+    margin: 0 0 0 380px;
+}
+
+
+dt, dd {
+    padding: 25px;
+    border: 1px solid black;
+    border-bottom: 0;
+    background-color: #363636;
+}
+
+a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color:
+}
+
+
+/* Project Modal */
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+#modal {
+    width: 350px;
+    background: #005288;
+    box-shadow: 0 0 10pc #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    z-index: 2002;
+    display: none;
+    height: 290px;
+}
+
+.addproject{
+    margin-left: 650px;
+       
+}
+#modal .header {
+    background: #333;
+    color: #FFF;
+    padding: 10px;
+}
+
+#modal p {
+    margin: 15px;   
+}
+
+#modal .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #F00;
+}
+
+.mystatus > input[type=radio] {
+    display: none;   
+}
+
+input[type=radio] + img {
+    border: 2px solid transparent;   
+}
+
+input[type=radio]:checked + img {
+    border: 2px solid #f00;  
+}
+    
+     
 
 
 
