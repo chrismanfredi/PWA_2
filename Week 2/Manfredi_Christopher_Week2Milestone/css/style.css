@@ -435,6 +435,14 @@ input[type=radio] + img {
 input[type=radio]:checked + img {
     border: 2px solid #f00;  
 }
+
+label[for=security] {
+    color: white;
+}
+
+input .yes {
+       
+}
     
      
 
